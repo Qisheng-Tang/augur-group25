@@ -57,7 +57,7 @@ Functional Requirements:
 
 Database ER Diagram:
 
-
+![ERD-Group25](https://lh3.googleusercontent.com/RswN4RrBjIcxFhMV9GTKd7TKoG0imQ9CPNdAdZqRq0HvLREj7i4I8eEvQTLMnDX1a97TAUJIYN32 "ERD")
 
 Database Description Language (SQL):
 
@@ -96,19 +96,6 @@ CREATE TABLE `Commit_Metadata` (
 );
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Source Code:
 
 AugurAPI.js - added two new timeseries metrics for “Lines Changed by Week” and “Lines Changed by Month”. These are then connected to the graph stubs in the ExperimentalCard.vue file.
@@ -145,5 +132,5 @@ Matt Rockey: created the SQL file and ERD for this doc.  Will work on the stubs 
 	
 Ryan Stephens: defined languages and skill gaps for project.  Will work on Python stubs and connecting them to HTML.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTAwODYzOV19
+eyJoaXN0b3J5IjpbMTk2Njg5MDA2MCwyMDQxMDA4NjM5XX0=
 -->
