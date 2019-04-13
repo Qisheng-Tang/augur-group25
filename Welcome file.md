@@ -95,22 +95,21 @@ CREATE TABLE `Commit_Metadata` (
 	PRIMARY KEY (`Commit`)
 );
 
-
 Source Code:
 
 AugurAPI.js - added two new timeseries metrics for “Lines Changed by Week” and “Lines Changed by Month”. These are then connected to the graph stubs in the ExperimentalCard.vue file.
+![enter image description here](https://lh3.googleusercontent.com/y9WKxz4KoWHjPEl-ZGgU-LmTlNnodr-UyVudAZvUeR8YI37rHb6RfhhpMXzjT3HPhQF80eSUJXEy)
 
-
-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 ExperimentalCard.vue - added graph stubs for both “Lines Changed by Week” and “Lines Changed by Month” in the ExperimentalCard.vue file. We then connected the timeseries metric from AugurAPI.js to the graph stubs.
-
+![enter image description here](https://lh3.googleusercontent.com/mooayADIm6HBk9uV-7GgBdbzHF9H9x9kXPzbnTiAhdYzhifD77SGvmBStAnI0nf-TNnQD2Q7aieY)
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 GrowthMaturityDeclineCard.vue - added graph stubs for “Lines of Code Changed” in the GrowthMaturityDeclineCard.vue file. The timeseries for lines_changed was already implemented in the AugurAPI.js so it was easy to connect to the graph stub.
-
-
+![enter image description here](https://lh3.googleusercontent.com/z-DRZujBTOtAc43VAIwJ31gp9zO7fdj2F5uR12-bI0_YDYd4Pm1sZ6U5IOf3MYDjszaG2P1hHFl7)
+![enter image description here](https://lh3.googleusercontent.com/CtB2jMIPmJ-lWpaM4n2SnH5Sz-A1ZssGEtqpTBu5PfUMxDUFM0dku4GvLKpkXHg-UZR7D_26p2Pd)
 
 
 
@@ -132,5 +131,5 @@ Matt Rockey: created the SQL file and ERD for this doc.  Will work on the stubs 
 	
 Ryan Stephens: defined languages and skill gaps for project.  Will work on Python stubs and connecting them to HTML.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2Njg5MDA2MCwyMDQxMDA4NjM5XX0=
+eyJoaXN0b3J5IjpbNDg1NTI2OTI2LDIwNDEwMDg2MzldfQ==
 -->
