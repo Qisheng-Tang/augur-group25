@@ -238,12 +238,12 @@ export default class AugurAPI {
       Endpoint(repo, 'contributingGithubOrganizations', 'contributing_github_organizations')
       Timeseries(repo, 'firstResponseToIssueDuration', 'issues/response_time')
       Timeseries(repo, 'forks', 'forks')
-      Timeseries(repo, 'linesOfCodeChanged', 'lines_changed')
       Timeseries(repo, 'maintainerResponseToMergeRequestDuration', 'pulls/maintainer_response_time')
       Timeseries(repo, 'newContributingGithubOrganizations', 'new_contributing_github_organizations')
       Timeseries(repo, 'openIssues', 'issues')
       Timeseries(repo, 'pullRequestComments', 'pulls/comments')
       Timeseries(repo, 'pullRequestsOpen', 'pulls')
+      Endpoint(repo, 'linesOfCodeChanged', 'lines_of_code_changed')
 
       // RISK
 
@@ -261,6 +261,7 @@ export default class AugurAPI {
       Timeseries(repo, 'commitComments', 'commits/comments')
       Endpoint(repo, 'committerLocations', 'committer_locations')
       Timeseries(repo, 'totalCommitters', 'total_committers')
+      
 
       // Issue Related
       Timeseries(repo, 'issueActivity', 'issues/activity')
@@ -285,10 +286,37 @@ export default class AugurAPI {
       Timeseries(repo, 'majorTags', 'tags/major')
       Timeseries(repo, 'newWatchers', 'new_watchers')
       Timeseries(repo, 'tags', 'tags')
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    
+        
+        
+    
+    
+    
+        
+        
+        
+        
+        
     }
 
     if (repo.gitURL) {
       // Other
+      GitEndpoint(repo, 'commitsByWeek', 'commits_by_week'),
+      GitEndpoint(repo, 'linesChangedByWeek', 'lines_changed_by_week'),
+      GitEndpoint(repo, 'linesChangedByMonth', 'lines_changed_by_month'),
       GitEndpoint(repo, 'changesByAuthor', 'changes_by_author'),
       GitEndpoint(repo, 'cdRepTpIntervalLocCommits', 'cd_rep_tp_interval_loc_commits'),
       GitEndpoint(repo, 'cdRgTpRankedLoc', 'cd_rg_tp_ranked_loc'),
