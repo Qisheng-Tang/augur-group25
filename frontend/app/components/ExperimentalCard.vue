@@ -16,6 +16,30 @@
       </div> -->
 
       <div class="col col-6">
+        <facade-line-chart source="linesChangedByWeek"
+                    title="Lines Changed / Week"
+                    cite-url=""
+                    cite-text="Lines Changed by Week">
+        </facade-line-chart>
+      </div>
+  
+      <div class="col col-6">
+        <monthly-facade-line-chart source="linesChangedByMonth"
+                    title="Lines Changed / Month"
+                    cite-url=""
+                    cite-text="Lines Changed by Month">
+        </monthly-facade-line-chart>
+      </div>
+      
+       <div class="col col-6">
+        <total-lines-facade-line-chart source="commitsByWeek"
+                    title="Commits / Week"
+                    cite-url=""
+                    cite-text="Commits per Week">
+        </total-lines-facade-line-chart>
+      </div>
+
+      <div class="col col-6">
         <dynamic-line-chart source="commitComments"
                     title="Commit Comments / Week "
                     cite-url=""
@@ -98,24 +122,41 @@
 </template>
 
 <script>
-
 import DynamicLineChart from './charts/DynamicLineChart'
 import BubbleChart from './charts/BubbleChart'
 import StackedBarChart from './charts/StackedBarChart'
 import DualAxisContributions from './charts/DualAxisContributions'
+import FacadeLineChart from './charts/facadeLineChart'
+import MonthlyFacadeLineChart from './charts/MonthlyFacadeLineChart'
+import TotalLinesFacadeLineChart from './charts/TotalLinesFacadeLineChart'
+
 
 module.exports = {
   data() {
     return {
+      values: {},
       colors: ["#FF3647", "#4736FF","#3cb44b","#ffe119","#f58231","#911eb4","#42d4f4","#f032e6"]
     }
+  },
+  computed: {
+    repo () {
+        return this.$store.state.baseRepo
+    },
+    gitRepo () {
+        return this.$store.state.gitRepo
+    },
   },
   components: {
     DynamicLineChart,
     BubbleChart,
     StackedBarChart,
-    DualAxisContributions
-  }
-}
+    DualAxisContributions,
+    FacadeLineChart,
+    MonthlyFacadeLineChart,
+    TotalLinesFacadeLineChart
+  },
+ created () {
 
+  }
+};
 </script>
