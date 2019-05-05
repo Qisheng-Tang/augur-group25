@@ -34,6 +34,9 @@ export default {
             
         })
         console.log("HERE", data)
+        data.forEach((element) => {
+        element.date = new Date(element.date)
+        })
         this.values = data
       })
       //FINISH CALLING ENDPOINT
@@ -50,7 +53,7 @@ export default {
         "mark": "line",
         "encoding": {
           "x": {
-            "field": "month", "type": "temporal",
+            "field": "date", "type": "temporal",
           },
           "y": {
             "field": "additions","type": "quantitative",
