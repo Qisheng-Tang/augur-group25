@@ -30,6 +30,9 @@ export default {
       let repo = window.AugurAPI.Repo({ gitURL: this.repo })
       repo[this.source]().then((data) => {
         console.log("HERE", data)
+        data.forEach((element) => {
+        element.date = new Date(element.date)
+        })
         this.values = data
       })
       //FINISH CALLING ENDPOINT
@@ -39,6 +42,7 @@ export default {
       // https://vega.github.io/editor/#/examples/vega-lite/line
       // AND SEE THE DATA THAT THEY ARE USING AT:
       // https://vega.github.io/vega-lite/data/stocks.csv
+      
       let config = {
         "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "width": 520,
