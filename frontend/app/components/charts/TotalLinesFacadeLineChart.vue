@@ -30,6 +30,9 @@ export default {
       let repo = window.AugurAPI.Repo({ gitURL: this.repo })
       repo[this.source]().then((data) => {
         console.log("HERE", data)
+         data.forEach((element) => {
+        element.date = new Date(element.date)
+        })
         this.values = data
       })
       //FINISH CALLING ENDPOINT
@@ -43,10 +46,11 @@ export default {
         "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "width": 520,
         "height": 250,
-        "mark": "line",
+        "mark": {"type": "line", 
+        "point": true},
         "encoding": {
           "x": {
-            "field": "week", "type": "temporal",
+            "field": "author_date", "type": "temporal",
           },
           "y": {
             "field": "patches","type": "quantitative",
