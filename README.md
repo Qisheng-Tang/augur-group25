@@ -1,10 +1,10 @@
-#What We Expect to Deliever:
+# What We Expect to Deliever:
 
-##For Our Group:
+## For Our Group:
 
 The ultimate goal of our group is to learn/understand how to implement graphs in Augur and successfully have data grabbed from the API displayed on them. We want to make it easy on the community manager to view metrics related to their project and understand how their project is doing. We also hope that we can learn more about JavaScript and the software development lifecycle throughout this process.
 
- ##For the End User:
+ ## For the End User:
 
 We hope our software can be used by the community manager or the developers in an open source project. Our software should help assist them in their analysis of stability and liveliness of an open source project. They will view metrics to see how far a project is progressing along and decide how to allocate resources based on the infromation they recieve. We also hope our software should help developers to build a healthier ecosystem in open-source software.
 
