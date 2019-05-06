@@ -8,9 +8,9 @@ http://ec2-18-217-244-45.us-east-2.compute.amazonaws.com:3333
 ------------------------------------------------------------------------------------------------------------------
 
 ## Files Created:
-### facadeLineChart.vue
-### MonthlyFacadeLineChart.vue
-### TotalLinesFacadeLineChart.vue
+### facadeLineChart.vue (for lines changed by week)
+### MonthlyFacadeLineChart.vue (for lines changed by month)
+### TotalLinesFacadeLineChart.vue (for commits by week)
 ## Files Modified:
 ### AugurAPI.js
 ### ExperimentalCard.vue
