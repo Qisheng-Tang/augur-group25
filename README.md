@@ -10,6 +10,8 @@ We hope our software can be used by the community manager or the developers in a
 
 In our current state, we want our users to see the three metrics: "Lines Changed by Week", "Lines Changed by Month", and "Commits by Week". From these three metrics, the community manager should know whether this community is in a health position for success or not. We would hope that they could use the information we provided them and address their problems however they wish.
 
+*The list of files we created/modified is in the developer-instructions.md file*
+
 ----------------------------------------------------------------------------------------------
 
 # Augur
