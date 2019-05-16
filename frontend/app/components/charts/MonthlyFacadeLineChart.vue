@@ -47,10 +47,14 @@ export default {
       // AND SEE THE DATA THAT THEY ARE USING AT:
       // https://vega.github.io/vega-lite/data/stocks.csv
       let config = {
+        "title" :{"text": "Commits/Week","fontWeight": "normal"},
         "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
         "width": 520,
         "height": 250,
-        "mark": "line",
+        "mark": {
+        "type": "line",
+        "point": true,
+        "color": "black"},
         "encoding": {
           "x": {
             "field": "date", "type": "temporal",
