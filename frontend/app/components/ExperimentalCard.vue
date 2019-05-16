@@ -17,7 +17,7 @@
 
       <div class="col col-6">
         <facade-line-chart source="linesChangedByWeek"
-                    title="Lines Changed / Week"
+                    title=""
                     cite-url=""
                     cite-text="Lines Changed by Week">
         </facade-line-chart>
@@ -25,7 +25,7 @@
   
       <div class="col col-6">
         <monthly-facade-line-chart source="linesChangedByMonth"
-                    title="Lines Changed / Month"
+                    title=""
                     cite-url=""
                     cite-text="Lines Changed by Month">
         </monthly-facade-line-chart>
@@ -33,7 +33,7 @@
       
        <div class="col col-6">
         <total-lines-facade-line-chart source="commitsByWeek"
-                    title="Commits / Week"
+                    title=""
                     cite-url=""
                     cite-text="Commits per Week">
         </total-lines-facade-line-chart>
