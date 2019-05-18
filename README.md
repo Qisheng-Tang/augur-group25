@@ -12,6 +12,11 @@ In our current state, we want our users to see the three metrics: "Lines Changed
 
 *The list of files we created/modified is in the developer-instructions.md file*
 
+## Link to our live system
+
+http://ec2-18-217-244-45.us-east-2.compute.amazonaws.com:3333/
+
+
 ----------------------------------------------------------------------------------------------
 
 # Augur
